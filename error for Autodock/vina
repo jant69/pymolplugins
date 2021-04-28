@@ -1,0 +1,16 @@
+Error: 1
+OSError Exception in Tk callback
+  Function: <bound method Autodock.generate_receptor of <pmg_tk.startup.autodock_plugin.Autodock object at 0x00000267415847C0>> (type: <class 'method'>)
+  Args: ()
+Traceback (innermost last):
+  File "C:\Anaconda3\lib\site-packages\Pmw.py", line 1823, in __call__
+    return self.func(*args)
+  File "C:\Anaconda3\lib\site-packages\pmg_tk\startup\autodock_plugin.py", line 1940, in generate_receptor
+    result, output = getstatusoutput(command)
+  File "C:\Anaconda3\lib\site-packages\pmg_tk\startup\autodock_plugin.py", line 85, in getstatusoutput
+    p = Popen(args, stdout=PIPE, stderr=STDOUT, stdin=PIPE, env=env)
+  File "C:\Anaconda3\lib\subprocess.py", line 854, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Anaconda3\lib\subprocess.py", line 1307, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+OSError: [WinError 193] %1
